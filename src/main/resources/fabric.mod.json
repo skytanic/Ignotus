@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "ignotus",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Ignotus",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Skytanic"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/skytanic",
+    "sources": "https://github.com/skytanic/Ignotus"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "",
+  "icon": "assets/ignotus/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.skytanic.ignotus.Ignotus"
+    ],
+    "client": [
+      "net.skytanic.ignotus.IgnotusClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "ignotus.mixins.json"
   ],
 
   "depends": {
